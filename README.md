@@ -30,7 +30,7 @@ cli
 
 console
 ```bash
-
+personal.unlockAccount(personal.listAccounts[0])
 ```
 
 rpc
