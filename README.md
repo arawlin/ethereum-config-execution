@@ -19,6 +19,12 @@ sudo apt-get install ethereum
         --/data
 ```
 
+## crontab
+
+```bash
+0 4 * * * /wallet/ethereum/data/start.sh
+```
+
 ## cmd
 
 cli

@@ -1,12 +1,12 @@
 #!/bin/bash
 
-DIR_DATA="."
+DIR_DATA="/wallet/ethereum/data"
 
 if [ -f $DIR_DATA"/node.pid" ]; then
 	pid=`cat $DIR_DATA"/node.pid"`
 	echo $pid
 	kill $pid
-	
+
 
 	echo -ne "Stoping Node"
 
@@ -16,12 +16,12 @@ if [ -f $DIR_DATA"/node.pid" ]; then
         sleep 1
     done
 	rm -r $DIR_DATA"/node.pid"
-	
-	DATE=$(date -d "now" +'%Y_%m_%d-%H_%M')
-    if [ ! -d $DIR_DATA/logs ]; then
-        mkdir $DIR_DATA/logs
-    fi
-    tar -pczf $DIR_DATA/logs/stderr-$DATE.txt.tar.gz stderr.txt stdout.txt
+
+#	DATE=$(date -d "now" +'%Y_%m_%d-%H_%M')
+#    if [ ! -d $DIR_DATA/logs ]; then
+#        mkdir $DIR_DATA/logs
+#    fi
+#    tar -pczf $DIR_DATA/logs/stderr-$DATE.txt.tar.gz $DIR_DATA/stderr.txt $DIR_DATA/stdout.txt
 
     echo -ne "\rNode Stopped.    \n"
 fi
