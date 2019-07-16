@@ -37,6 +37,9 @@ cli
 console
 ```bash
 personal.unlockAccount(personal.listAccounts[0])
+
+# eth.resend(tx, optional gas price, optional gas limit)
+eth.resend(eth.pendingTransactions[0], web3.toWei(20, 'gwei'))
 ```
 
 rpc
