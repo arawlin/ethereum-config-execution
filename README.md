@@ -14,9 +14,7 @@ sudo apt-get install ethereum
 ## path tree
 
 ```
---/wallet
-    --/ethereum
-        --/data
+mkdir -p /wallet/ethereum/data
 ```
 
 ## crontab
