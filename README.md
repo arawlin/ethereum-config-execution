@@ -17,6 +17,12 @@ sudo apt-get install ethereum
 mkdir -p /wallet/ethereum/data
 ```
 
+## install config
+
+```bash
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/snakewarhead/ethereum-config/master/install.sh)"
+```
+
 ## crontab
 
 ```bash
