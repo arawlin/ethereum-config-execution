@@ -20,7 +20,7 @@ mkdir -p /wallet/ethereum/data
 ## crontab
 
 ```bash
-0 4 * * * /wallet/ethereum/data/start.sh
+*/30 * * * * /wallet/ethereum/data/checkrunning.sh
 ```
 
 ## cmd
