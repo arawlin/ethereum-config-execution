@@ -26,7 +26,8 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/snakewarhead/ethereum-conf
 ## crontab
 
 ```bash
-*/30 * * * * /wallet/ethereum/data/checkrunning.sh
+*/5 * * * * /wallet/ethereum/data/checkrunning.sh
+0 6 * * * /wallet/ethereum/data/start.sh
 ```
 
 ## cmd
