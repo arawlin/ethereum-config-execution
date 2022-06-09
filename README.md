@@ -17,10 +17,16 @@ sudo apt-get install ethereum
 mkdir -p /wallet/ethereum/data
 ```
 
-## install config
+## install
 
 ```bash
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/snakewarhead/ethereum-config/master/install.sh)"
+```
+
+## dump config
+
+```bash
+geth --datadir /wallet/ethereum/data --syncmode snap --gcmode full --cache 8192 --http --http.addr 192.168.1.51 --http.port 7000 --http.api web3,eth,txpool --ws --ws.addr 192.168.1.51 --ws.port 7001 --ws.api web3,eth,txpool --maxpeers 100 dumpconfig
 ```
 
 ## crontab
