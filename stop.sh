@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DIR_DATA="/wallet/ethereum/data"
+DIR_DATA="/wallet/ethereum/execution"
 
 if [ -f $DIR_DATA"/node.pid" ]; then
 	pid=`cat $DIR_DATA"/node.pid"`

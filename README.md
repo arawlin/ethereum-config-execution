@@ -14,26 +14,26 @@ sudo apt-get install ethereum
 ## path tree
 
 ```
-mkdir -p /wallet/ethereum/data
+mkdir -p /wallet/ethereum/execution
 ```
 
 ## install
 
 ```bash
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/snakewarhead/ethereum-config/master/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/snakewarhead/ethereum-config-execution/master/install.sh)"
 ```
 
 ## dump config
 
 ```bash
-geth --datadir /wallet/ethereum/data --syncmode snap --gcmode full --cache 8192 --http --http.addr 192.168.1.51 --http.port 7000 --http.api web3,eth,txpool --ws --ws.addr 192.168.1.51 --ws.port 7001 --ws.api web3,eth,txpool --maxpeers 100 dumpconfig
+geth --datadir /wallet/ethereum/execution --syncmode snap --gcmode full --cache 8192 --http --http.addr 192.168.1.51 --http.port 7000 --http.api web3,eth,txpool --ws --ws.addr 192.168.1.51 --ws.port 7001 --ws.api web3,eth,txpool --maxpeers 100 dumpconfig
 ```
 
 ## crontab
 
 ```bash
-*/5 * * * * /wallet/ethereum/data/checkrunning.sh
-0 6 * * * /wallet/ethereum/data/start.sh
+*/5 * * * * /wallet/ethereum/execution/checkrunning.sh
+0 6 * * * /wallet/ethereum/execution/start.sh
 ```
 
 ## cmd

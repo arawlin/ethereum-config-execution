@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DIR_DATA="/wallet/ethereum/data"
+DIR_DATA="/wallet/ethereum/execution"
 
 $DIR_DATA/stop.sh
 echo -e "Starting \n"

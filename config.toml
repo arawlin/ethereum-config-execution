@@ -34,7 +34,7 @@ CacheDir = "ethash"
 CachesInMem = 2
 CachesOnDisk = 3
 CachesLockMmap = false
-DatasetDir = "/home/game/.ethash"
+DatasetDir = "/wallet/ethereum/.ethash"
 DatasetsInMem = 1
 DatasetsOnDisk = 2
 DatasetsLockMmap = false
@@ -63,7 +63,7 @@ MaxPrice = 500000000000
 IgnorePrice = 2
 
 [Node]
-DataDir = "/wallet/ethereum/data"
+DataDir = "/wallet/ethereum/execution"
 IPCPath = "geth.ipc"
 HTTPHost = "192.168.1.51"
 HTTPPort = 7000
