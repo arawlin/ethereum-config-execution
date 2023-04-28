@@ -49,10 +49,10 @@ Rejournal = 3600000000000
 PriceLimit = 1
 PriceBump = 10
 AccountSlots = 16
-GlobalSlots = 5120
+GlobalSlots = 10240
 AccountQueue = 64
-GlobalQueue = 1024
-Lifetime = 10800000000000
+GlobalQueue = 2048
+Lifetime = 180000000000
 
 [Eth.GPO]
 Blocks = 20
