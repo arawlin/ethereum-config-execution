@@ -26,20 +26,8 @@ RPCTxFeeCap = 1e+00
 GasFloor = 0
 GasCeil = 30000000
 GasPrice = 1000000000
-Recommit = 3000000000
-Noverify = false
-
-[Eth.Ethash]
-CacheDir = "ethash"
-CachesInMem = 2
-CachesOnDisk = 3
-CachesLockMmap = false
-DatasetDir = "/wallet/ethereum/.ethash"
-DatasetsInMem = 1
-DatasetsOnDisk = 2
-DatasetsLockMmap = false
-PowMode = 0
-NotifyFull = false
+Recommit = 2000000000
+NewPayloadTimeout = 2000000000
 
 [Eth.TxPool]
 Locals = []
@@ -49,10 +37,10 @@ Rejournal = 3600000000000
 PriceLimit = 1
 PriceBump = 10
 AccountSlots = 16
-GlobalSlots = 10240
+GlobalSlots = 2048
 AccountQueue = 64
-GlobalQueue = 2048
-Lifetime = 180000000000
+GlobalQueue = 512
+Lifetime = 30000000000
 
 [Eth.GPO]
 Blocks = 20
