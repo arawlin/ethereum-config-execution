@@ -1,5 +1,7 @@
+blobpool/
 geth/
 keystore/
 logs/
 node.pid
 *.txt
+history

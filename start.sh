@@ -1,9 +1,11 @@
 #!/bin/bash
 
-DIR_DATA="/wallet/ethereum/execution"
+DIR_DATA="/wallet/ethereum/test"
+INTERVAL_MINE=13
 
 $DIR_DATA/stop.sh
 echo -e "Starting \n"
 
-geth --config $DIR_DATA/config.toml >$DIR_DATA/stdout.txt 2>$DIR_DATA/stderr.txt &
+geth --dev --dev.period $INTERVAL_MINE --config $DIR_DATA/config.toml --datadir $DIR_DATA >$DIR_DATA/stdout.txt 2>$DIR_DATA/stderr.txt &
+#geth --dev --dev.period $INTERVAL_MINE --config $DIR_DATA/config.toml --datadir $DIR_DATA console
 echo $! >$DIR_DATA/node.pid
