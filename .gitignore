@@ -3,3 +3,10 @@ keystore/
 logs/
 node.pid
 *.txt
+
+blobstore/
+db/
+invalid_block_hooks/
+static_files/
+discovery-secret
+known-peers.json
