@@ -1,7 +1,7 @@
 set -e
 
 CONFIG_HOME=/wallet/ethereum/execution
-REMOTE=https://github.com/snakewarhead/ethereum-config-execution.git
+REMOTE=https://github.com/arawlin/ethereum-config-execution.git
 
 mkdir -p "$CONFIG_HOME"
 git clone "$REMOTE" "$CONFIG_HOME"
